@@ -59,9 +59,14 @@ class MyTestCase(unittest.TestCase):
     self.assertEqual(r1, 5)
 
   #bad test, force fail
+  #def test_t15(self):
+  #  r1 = Experiment.largest([1,1,1,1,1,1,1,2])
+  #  self.assertEqual(r1, 3)
+
   def test_t15(self):
     r1 = Experiment.largest([1,1,1,1,1,1,1,2])
-    self.assertEqual(r1, 3)
+    self.assertEqual(r1, 2)
+
 
 
 
