@@ -34,9 +34,13 @@ class MyTestCase(unittest.TestCase):
     r1 = Experiment.largest([0,1])
     self.assertEqual(r1, 1)
 
-  def test_t8(self):
+  def test_t9(self):
     r1 = Experiment.largest([-2,-1])
     self.assertEqual(r1, -1)
+
+  def test_t10(self):
+    r1 = Experiment.largest([-1000, 1000, 1001])
+    self.assertEqual(r1, 1001)
 
 
 if __name__ == '__main__':
