@@ -50,13 +50,6 @@ class MyTestCase(unittest.TestCase):
     r1 = Experiment.largest([1])
     self.assertEqual(r1, 1)
 
-  def test_t13(self):
-    r1 = Experiment.largest([5,4,3,2,1])
-    self.assertEqual(r1, 5)
-  
-  def test_t14(self):
-    r1 = Experiment.largest([1,2,3,4,5,4,3,2,1])
-    self.assertEqual(r1, 5)
 
 
 
