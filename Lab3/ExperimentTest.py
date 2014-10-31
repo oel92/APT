@@ -58,6 +58,11 @@ class MyTestCase(unittest.TestCase):
     r1 = Experiment.largest([1,2,3,4,5,4,3,2,1])
     self.assertEqual(r1, 5)
 
+  #bad test, force fail
+  def test_t15(self):
+    r1 = Experiment.largest([1,1,1,1,1,1,1,2])
+    self.assertEqual(r1, 3)
+
 
 
 if __name__ == '__main__':
