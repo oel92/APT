@@ -9,4 +9,6 @@ public class ViewStreams extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_streams);
     }
+	
+	
 }

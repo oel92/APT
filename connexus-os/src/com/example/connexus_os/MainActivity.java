@@ -40,4 +40,9 @@ public class MainActivity extends ActionBarActivity {
     	Intent intent = new Intent(this, ViewStreams.class);
     	startActivity(intent);
     }
+    
+    public void viewStreams(View view){
+    	Intent intent = new Intent(this, ViewStreams.class);
+    	startActivity(intent);
+    }
 }

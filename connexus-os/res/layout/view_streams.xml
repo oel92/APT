@@ -4,134 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ImageButton
-        android:id="@+id/ImageButton02"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="44dp"
-        android:layout_y="88dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton04"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="126dp"
-        android:layout_y="88dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton03"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="206dp"
-        android:layout_y="87dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton01"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="283dp"
-        android:layout_y="87dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton07"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="206dp"
-        android:layout_y="152dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton05"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="126dp"
-        android:layout_y="153dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton06"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="43dp"
-        android:layout_y="153dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton08"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="284dp"
-        android:layout_y="152dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton09"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="46dp"
-        android:layout_y="214dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton10"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="127dp"
-        android:layout_y="214dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton11"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="207dp"
-        android:layout_y="214dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton12"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="284dp"
-        android:layout_y="212dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton13"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="46dp"
-        android:layout_y="280dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton14"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="128dp"
-        android:layout_y="281dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton15"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="208dp"
-        android:layout_y="280dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/ImageButton16"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
-        android:layout_x="286dp"
-        android:layout_y="280dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -172,5 +44,133 @@
         android:layout_x="50dp"
         android:layout_y="453dp"
         android:text="My Subscribed Streams" />
+
+    <ImageButton
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="58dp"
+        android:layout_y="162dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="58dp"
+        android:layout_y="104dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="198dp"
+        android:layout_y="104dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="268dp"
+        android:layout_y="104dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="128dp"
+        android:layout_y="104dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="127dp"
+        android:layout_y="162dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="197dp"
+        android:layout_y="164dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="271dp"
+        android:layout_y="165dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="58dp"
+        android:layout_y="238dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="126dp"
+        android:layout_y="230dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="204dp"
+        android:layout_y="230dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="272dp"
+        android:layout_y="231dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="58dp"
+        android:layout_y="295dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="274dp"
+        android:layout_y="293dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="128dp"
+        android:layout_y="295dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <ImageButton
+        android:id="@+id/view15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="203dp"
+        android:layout_y="295dp"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
 
 </AbsoluteLayout>

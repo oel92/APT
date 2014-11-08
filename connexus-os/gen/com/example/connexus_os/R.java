@@ -1304,18 +1304,8 @@ containing a value of this type.
     }
     public static final class id {
         public static final int AbsoluteLayout1=0x7f090067;
-        public static final int ImageButton01=0x7f090053;
-        public static final int ImageButton02=0x7f090052;
-        public static final int ImageButton03=0x7f090055;
-        public static final int ImageButton04=0x7f090054;
-        public static final int ImageButton05=0x7f090056;
         public static final int ImageButton06=0x7f090057;
         public static final int ImageButton07=0x7f090058;
-        public static final int ImageButton08=0x7f090059;
-        public static final int ImageButton09=0x7f09005a;
-        public static final int ImageButton10=0x7f09005d;
-        public static final int ImageButton11=0x7f09005b;
-        public static final int ImageButton12=0x7f09005c;
         public static final int ImageButton13=0x7f09005e;
         public static final int ImageButton14=0x7f09005f;
         public static final int ImageButton15=0x7f090060;
@@ -1331,7 +1321,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_close_button=0x7f090035;
-        public static final int action_settings=0x7f09006c;
+        public static final int action_settings=0x7f090072;
         public static final int activity_chooser_view_content=0x7f090036;
         public static final int alignBounds=0x7f090008;
         public static final int alignMargins=0x7f090009;
@@ -1410,6 +1400,22 @@ containing a value of this type.
         public static final int useLogo=0x7f090020;
         public static final int username=0x7f09004e;
         public static final int vertical=0x7f090007;
+        public static final int view1=0x7f09006c;
+        public static final int view10=0x7f09005d;
+        public static final int view11=0x7f09005b;
+        public static final int view12=0x7f090059;
+        public static final int view13=0x7f09005a;
+        public static final int view14=0x7f090070;
+        public static final int view15=0x7f090071;
+        public static final int view16=0x7f09005c;
+        public static final int view2=0x7f090053;
+        public static final int view3=0x7f090052;
+        public static final int view4=0x7f090055;
+        public static final int view5=0x7f090054;
+        public static final int view6=0x7f09006d;
+        public static final int view7=0x7f09006e;
+        public static final int view8=0x7f09006f;
+        public static final int view9=0x7f090056;
         public static final int viewstreams=0x7f09004f;
         public static final int withText=0x7f090025;
     }
