@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_x="58dp"
         android:layout_y="162dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view1"
@@ -59,7 +59,8 @@
         android:layout_height="wrap_content"
         android:layout_x="58dp"
         android:layout_y="104dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop" />
 
     <ImageButton
         android:id="@+id/view3"
@@ -67,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_x="198dp"
         android:layout_y="104dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view4"
@@ -75,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_x="268dp"
         android:layout_y="104dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view2"
@@ -83,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_x="128dp"
         android:layout_y="104dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view6"
@@ -91,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_x="127dp"
         android:layout_y="162dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view7"
@@ -99,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_x="197dp"
         android:layout_y="164dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view8"
@@ -107,15 +108,7 @@
         android:layout_height="wrap_content"
         android:layout_x="271dp"
         android:layout_y="165dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
-
-    <ImageButton
-        android:id="@+id/view9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="58dp"
-        android:layout_y="238dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view10"
@@ -123,7 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_x="126dp"
         android:layout_y="230dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view11"
@@ -131,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_x="204dp"
         android:layout_y="230dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view12"
@@ -139,7 +132,7 @@
         android:layout_height="wrap_content"
         android:layout_x="272dp"
         android:layout_y="231dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view13"
@@ -147,7 +140,7 @@
         android:layout_height="wrap_content"
         android:layout_x="58dp"
         android:layout_y="295dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view16"
@@ -155,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_x="274dp"
         android:layout_y="293dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view14"
@@ -163,7 +156,7 @@
         android:layout_height="wrap_content"
         android:layout_x="128dp"
         android:layout_y="295dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/view15"
@@ -171,6 +164,14 @@
         android:layout_height="wrap_content"
         android:layout_x="203dp"
         android:layout_y="295dp"
-        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/view9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="62dp"
+        android:layout_y="231dp"
+        android:background="@android:color/transparent" />
 
 </AbsoluteLayout>

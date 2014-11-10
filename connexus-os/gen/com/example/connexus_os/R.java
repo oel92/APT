@@ -1310,6 +1310,7 @@ containing a value of this type.
         public static final int ImageButton14=0x7f09005f;
         public static final int ImageButton15=0x7f090060;
         public static final int ImageButton16=0x7f090061;
+        public static final int RelativeLayout1=0x7f09006b;
         public static final int action_bar=0x7f09002d;
         public static final int action_bar_activity_content=0x7f090001;
         public static final int action_bar_container=0x7f09002c;
@@ -1321,7 +1322,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f090002;
         public static final int action_menu_presenter=0x7f090003;
         public static final int action_mode_close_button=0x7f090035;
-        public static final int action_settings=0x7f090072;
+        public static final int action_settings=0x7f090073;
         public static final int activity_chooser_view_content=0x7f090036;
         public static final int alignBounds=0x7f090008;
         public static final int alignMargins=0x7f090009;
@@ -1369,7 +1370,7 @@ containing a value of this type.
         public static final int radio=0x7f090040;
         public static final int right=0x7f090015;
         public static final int search=0x7f090065;
-        public static final int searchStreams=0x7f09006b;
+        public static final int searchStreams=0x7f09006c;
         public static final int search_badge=0x7f090043;
         public static final int search_bar=0x7f090042;
         public static final int search_button=0x7f090044;
@@ -1400,21 +1401,21 @@ containing a value of this type.
         public static final int useLogo=0x7f090020;
         public static final int username=0x7f09004e;
         public static final int vertical=0x7f090007;
-        public static final int view1=0x7f09006c;
+        public static final int view1=0x7f09006d;
         public static final int view10=0x7f09005d;
         public static final int view11=0x7f09005b;
         public static final int view12=0x7f090059;
         public static final int view13=0x7f09005a;
-        public static final int view14=0x7f090070;
-        public static final int view15=0x7f090071;
+        public static final int view14=0x7f090071;
+        public static final int view15=0x7f090072;
         public static final int view16=0x7f09005c;
         public static final int view2=0x7f090053;
         public static final int view3=0x7f090052;
         public static final int view4=0x7f090055;
         public static final int view5=0x7f090054;
-        public static final int view6=0x7f09006d;
-        public static final int view7=0x7f09006e;
-        public static final int view8=0x7f09006f;
+        public static final int view6=0x7f09006e;
+        public static final int view7=0x7f09006f;
+        public static final int view8=0x7f090070;
         public static final int view9=0x7f090056;
         public static final int viewstreams=0x7f09004f;
         public static final int withText=0x7f090025;
@@ -1474,8 +1475,9 @@ containing a value of this type.
         public static final int search=0x7f03001a;
         public static final int single_stream=0x7f03001b;
         public static final int support_simple_spinner_dropdown_item=0x7f03001c;
-        public static final int upload=0x7f03001d;
-        public static final int view_streams=0x7f03001e;
+        public static final int test=0x7f03001d;
+        public static final int upload=0x7f03001e;
+        public static final int view_streams=0x7f03001f;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;

@@ -13,5 +13,7 @@
 			<accessrule kind="nonaccessible" pattern="com/android/internal/**"/>
 		</accessrules>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/olo/Downloads/android-async-http-1.4.6.jar"/>
+	<classpathentry kind="con" path="org.m4eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
