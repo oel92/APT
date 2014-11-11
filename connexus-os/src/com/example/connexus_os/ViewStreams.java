@@ -1,6 +1,7 @@
 package com.example.connexus_os;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -9,6 +10,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.ActionBarActivity;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 import java.io.BufferedReader;
@@ -44,7 +47,7 @@ import org.json.JSONObject;
 
 @SuppressLint("NewApi")
 public class ViewStreams extends ActionBarActivity {
-	
+	public JSONArray keys;
 	@SuppressLint("NewApi")
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +73,11 @@ public class ViewStreams extends ActionBarActivity {
             	String str;
 				try {
 					str = new String(response, "UTF-8");
-					JSONArray urls = new JSONArray(str);
+					JSONObject dict = new JSONObject(str);
+					JSONArray urls = dict.getJSONArray("urls");
+					keys = dict.getJSONArray("keys");
+					
+					
 					System.out.println(urls.get(0).toString());
 					for(int i = 0; i < urls.length(); i++){
 						System.out.println("added");
@@ -253,8 +260,206 @@ public class ViewStreams extends ActionBarActivity {
         });
         
        
-        
-        
-        
+         
 	}
+	public void singleStream1(View view){
+    	if(keys.length() > 0){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(0).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream2(View view){
+    	if(keys.length() > 1){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(1).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream3(View view){
+    	if(keys.length() > 2){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(2).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream4(View view){
+    	if(keys.length() > 3){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(3).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream5(View view){
+    	if(keys.length() > 4){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(4).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream6(View view){
+    	if(keys.length() > 5){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(5).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream7(View view){
+    	if(keys.length() > 6){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(6).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream8(View view){
+    	if(keys.length() > 7){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(7).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream9(View view){
+    	if(keys.length() > 8){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(8).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream10(View view){
+    	if(keys.length() > 9){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(9).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream11(View view){
+    	if(keys.length() > 10){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(10).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream12(View view){
+    	if(keys.length() > 11){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(11).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream13(View view){
+    	if(keys.length() > 12){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(12).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream14(View view){
+    	if(keys.length() > 13){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(13).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream15(View view){
+    	if(keys.length() > 14){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(14).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void singleStream16(View view){
+    	if(keys.length() > 15){
+    		Intent myIntent = new Intent(this,SingleStream.class);
+    		try {
+    			myIntent.putExtra("key",keys.get(15).toString());
+    		} catch (JSONException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+    		startActivity(myIntent);
+    	}
+    }
+	public void search(View view){
+		EditText text = (EditText)findViewById(R.id.searchStreams);
+		Intent intent = new Intent(this, Search.class);
+		intent.putExtra("text",text.getText().toString());
+		
+		startActivity(intent);
+	}
+
 }

@@ -57,7 +57,7 @@
         android:src="@drawable/abc_ab_bottom_solid_light_holo" />
 
     <ImageButton
-        android:id="@+id/ImageButton06"
+        android:id="@+id/image7"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_x="104dp"
@@ -65,7 +65,7 @@
         android:src="@drawable/abc_ab_bottom_solid_light_holo" />
 
     <ImageButton
-        android:id="@+id/ImageButton07"
+        android:id="@+id/image8"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_x="170dp"
