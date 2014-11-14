@@ -865,8 +865,35 @@ class MobileSearch(webapp2.RequestHandler):
 		self.response.write(json.dumps({'result': result_urls, 'streamKeys': streamKeys, 'size': numArray}))
 
 class MobileNear(webapp2.RequestHandler):
-	def
+	def get(self):
+		stream_query = Stream.query(ancestor=stream_key(DEFAULT_STREAM_NAME))
+		streams = stream_query.fetch()
 		
+		
+		streamUrls = []
+		streamKeys = []
+		#If no cover_url, sets first (oldest) picture in stream to be cover
+		for stream in streams:
+			streamUrls.append(stream.cover)
+			streamKeys.append(stream.key.urlsafe())
+		
+		self.response.write(json.dumps({'urls':streamUrls, 'keys':streamKeys}))
+
+class MobileUpload(webapp2.RequestHandler):
+	def get(self):
+		key = self.request.get("key")
+		key = key.urlsafe()
+
+		stream_query = Stream.query(ancestor=stream_key(DEFAULT_STREAM_NAME))
+		streams = stream_query.fetch()
+
+		name = ""
+		for stream in streams:
+			if stream.key.urlsafe() == key:
+				name = stream.name
+		self.response.write(json.dumps(name))
+		
+
 application = webapp2.WSGIApplication([
     ('/', FrontPage),
     ('/manage', Manage),
@@ -884,7 +911,8 @@ application = webapp2.WSGIApplication([
 	('/mobileView', MobileView),
 	('/mobileSingle', MobileSingle),
 	('/mobileSearch', MobileSearch),
-	('/mobileNear', MobileNear)
+	('/mobileNear', MobileNear),
+	('/mobileUpload', MobileUpload)
 ], debug=True)
 
 

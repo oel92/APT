@@ -879,6 +879,21 @@ class MobileNear(webapp2.RequestHandler):
 		
 		self.response.write(json.dumps({'urls':streamUrls, 'keys':streamKeys}))
 
+class MobileUpload(webapp2.RequestHandler):
+	def get(self):
+		key = self.request.get("key")
+		
+
+		stream_query = Stream.query(ancestor=stream_key(DEFAULT_STREAM_NAME))
+		streams = stream_query.fetch()
+
+		name = ""
+		for stream in streams:
+			if stream.key.urlsafe() == key:
+				name = stream.name
+		self.response.write(json.dumps(name))
+		
+
 application = webapp2.WSGIApplication([
     ('/', FrontPage),
     ('/manage', Manage),
@@ -896,7 +911,8 @@ application = webapp2.WSGIApplication([
 	('/mobileView', MobileView),
 	('/mobileSingle', MobileSingle),
 	('/mobileSearch', MobileSearch),
-	('/mobileNear', MobileNear)
+	('/mobileNear', MobileNear),
+	('/mobileUpload', MobileUpload)
 ], debug=True)
 
 

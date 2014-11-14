@@ -461,5 +461,11 @@ public class ViewStreams extends ActionBarActivity {
 		
 		startActivity(intent);
 	}
+	public void nearby(View view){
+		
+		Intent intent = new Intent(this, NearbyStreams.class);
+	
+		startActivity(intent);
+	}
 
 }

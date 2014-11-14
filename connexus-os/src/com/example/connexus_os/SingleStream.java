@@ -452,4 +452,14 @@ public class SingleStream extends ActionBarActivity {
 		Intent intent = new Intent(this, ViewStreams.class);
 		startActivity(intent);
 	}
+	public void upload(View view){
+		Intent myIntent = getIntent(); // gets the previously created intent
+        String key = myIntent.getStringExtra("key");
+        
+        
+        
+		Intent intent = new Intent(this, Upload.class);
+		intent.putExtra("key", key);
+		startActivity(intent);
+	}
 }
