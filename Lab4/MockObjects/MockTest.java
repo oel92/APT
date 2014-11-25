@@ -1,0 +1,162 @@
+import junit.framework.*;
+import com.mockobjects.servlet.*;
+
+public class MockTest extends TestCase {
+
+  public void testBadParam1() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farentemperature", "1");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>No Temperature</title></head><body><h2>Need to enter a temperature!</h2></body></html>\n",
+                 response.getOutputStreamContents());
+  }
+
+  public void testBadParam2() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "aaa");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Bad Temperature</title></head><body><h2>Need to enter a valid temperature!"
+                + "Got a NumberFormatException on aaa</h2></body></html>\n",
+                 response.getOutputStreamContents());
+  }
+
+
+  public void testBadParam3() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "212");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + 212 + " Farenheit = " + 100.00 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  }
+
+
+  public void testBadParam4() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheiTtemperature", "3.14"); //case insensitive
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + 3.14 + " Farenheit = " + -16.03 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  }
+  
+  public void testBadParam5() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "-500");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + -500 + " Farenheit = " + 295.6 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  } 
+
+  public void testBadParams6() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "3.14");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + 3.14 + " Farenheit = " + -16.03 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  } 
+
+  public void testBadParams7() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "999");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + 999 + " Farenheit = " + 537.2 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  } 
+
+  public void testBadParams8() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "0");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + 0 + " Farenheit = " + -17.78 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  } 
+
+  public void testBadParams9() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "212.01");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + 212.01 + " Farenheit = " + 100.0 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  } 
+
+  public void testBadParams10() throws Exception {
+    TestingLabConverterServlet s = new TestingLabConverterServlet();
+    MockHttpServletRequest request = new MockHttpServletRequest();
+    MockHttpServletResponse response = new MockHttpServletResponse();
+    
+    request.setupAddParameter("farenheitTemperature", "-0");
+    response.setExpectedContentType("text/html");
+    s.doGet(request,response);
+    response.verify();
+    assertEquals("<html><head><title>Temperature Converter Result</title>"
+                 + "</head><body><h2>" + "-0" + " Farenheit = " + -17.78 + " Celsius "
+                 + "</h2>\n"+"<p><h3>The temperature in Austin is " + "451"  + " degrees Farenheit</h3>\n"
+				 + "</body></html>\n"
+                , response.getOutputStreamContents());
+  } 
+}
